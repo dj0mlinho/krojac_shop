@@ -74,13 +74,18 @@
   <!-- Main Header END -->
 
   <main>
-    <div class="container">
-      <a href="#" class="back">Ženska majica Cosmos</a>
+    <div class="container" id="insertTemplate">
+
+
+
+
+      <script type="template">
+        <a href="#" class="back">{{productTitle}} {{model}}</a>
       <article class="product-detailes">
         <div class="row">
           <div class="col-sm-5">
             <div class="white-bkg">
-              <a href="#"><img src="img/products/product1.jpg" alt="1" class="img-responsive center-block"></a>
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="1" class="img-responsive center-block"></a>
             </div>
             <div class="gallery-mini">
               <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
@@ -91,7 +96,7 @@
             </div>
           </div>
           <div class="col-sm-7">
-            <h2>Ženska majica Cosmos</h2>
+            <h2>{{productTitle}} {{model}}</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
               laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
               ullamcorper suscipit lobortis nisl ut
@@ -108,7 +113,7 @@
               </div>
               <div class="terms-holder">
                 <span class="term">Cena:</span>
-                <span class="price">2.990 rsd</span>
+                <span class="price">{{price}} rsd</span>
               </div>
               <div class="terms-holder">
                 <span class="term">Dostava:</span>
@@ -123,6 +128,10 @@
           </div>
         </div>
       </article>
+</script>
+
+
+
 
 
       <section class="products-section">
