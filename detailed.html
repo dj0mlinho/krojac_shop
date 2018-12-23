@@ -88,11 +88,11 @@
               <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="1" class="img-responsive center-block"></a>
             </div>
             <div class="gallery-mini">
-              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
-              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
-              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
-              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
-              <a href="#"><img src="img/products/product-small.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="ALT"></a>
+              <a href="#"><img src="img/products/{{imgSrc}}.jpg" alt="ALT"></a>
             </div>
           </div>
           <div class="col-sm-7">
@@ -136,13 +136,16 @@
 
       <section class="products-section">
         <h3 class="top-picked active">Izdvajamo</h3>
-        <div class="row">
-          <div class="col-xs-6 col-md-4 col-lg-3 article-clear">
+        <div class="row" id="insertTemplate2">
+
+
+          <script type="secondTemplate">
+            <div class="col-xs-6 col-md-4 col-lg-3 article-clear">
             <article class="product clearfix">
               <!-- Image Holder -->
               <div class="product-img-holder">
                 <a href="#">
-                  <img src="img/products/product4.jpg" alt="1" class="img-responsive">
+                  <img src="img/products/{{imgSrc}}.jpg" alt="1" class="img-responsive">
                 </a>
                 <ul class="hover-list list-reset">
                   <li><a href="#"><img src="img/shop-icon.png" alt="Shop icon"></a></li>
@@ -153,80 +156,21 @@
               <!-- Image Holder END -->
               <!-- Product Title -->
               <div class="product-title clearfix">
-                <h3>Ženska bluza <span>Cosmos</span></h3>
-                <span>5.500 rsd</span>
+                <h3>{{productTitle}} <span>{{model}}</span></h3>
+                <span>{{price}} rsd</span>
               </div>
               <!-- Product Title END -->
             </article>
           </div>
-          <div class="col-xs-6 col-md-4 col-lg-3 article-clear">
-            <article class="product clearfix">
-              <!-- Image Holder -->
-              <div class="product-img-holder">
-                <a href="#">
-                  <img src="img/products/product8.jpg" alt="1" class="img-responsive">
-                </a>
-                <ul class="hover-list list-reset">
-                  <li><a href="#"><img src="img/shop-icon.png" alt="Shop icon"></a></li>
-                  <li><a href="#"><img src="img/view-icon.png" alt="View icon"></a></li>
-                  <li><a href="#"><img src="img/like-icon.png" alt="Like icon"></a></li>
-                </ul>
-              </div>
-              <!-- Image Holder END -->
-              <!-- Product Title -->
-              <div class="product-title clearfix">
-                <h3>Ženska majica <span>North west</span></h3>
-                <span>8.880 rsd</span>
-              </div>
-              <!-- Product Title END -->
-            </article>
-          </div>
-          <div class="col-xs-6 col-md-4 col-lg-3 article-clear">
-            <article class="product clearfix">
-              <!-- Image Holder -->
-              <div class="product-img-holder">
-                <a href="#">
-                  <img src="img/products/product11.jpg" alt="1" class="img-responsive">
-                </a>
-                <ul class="hover-list list-reset">
-                  <li><a href="#"><img src="img/shop-icon.png" alt="Shop icon"></a></li>
-                  <li><a href="#"><img src="img/view-icon.png" alt="View icon"></a></li>
-                  <li><a href="#"><img src="img/like-icon.png" alt="Like icon"></a></li>
-                </ul>
-              </div>
-              <!-- Image Holder END -->
-              <!-- Product Title -->
-              <div class="product-title clearfix">
-                <h3>Ženska košulja <span>North west</span></h3>
-                <span>2.100 rsd</span>
-              </div>
-              <!-- Product Title END -->
-            </article>
-          </div>
-          <div class="col-xs-6 col-md-4 col-lg-3 article-clear">
-            <article class="product clearfix">
-              <!-- Image Holder -->
-              <div class="product-img-holder">
-                <a href="#">
-                  <img src="img/products/product7.jpg" alt="1" class="img-responsive">
-                </a>
-                <ul class="hover-list list-reset">
-                  <li><a href="#"><img src="img/shop-icon.png" alt="Shop icon"></a></li>
-                  <li><a href="#"><img src="img/view-icon.png" alt="View icon"></a></li>
-                  <li><a href="#"><img src="img/like-icon.png" alt="Like icon"></a></li>
-                </ul>
-              </div>
-              <!-- Image Holder END -->
-              <!-- Product Title -->
-              <div class="product-title clearfix">
-                <h3>Ženski duks <span>North west</span></h3>
-                <span>5.880 rsd</span>
-              </div>
-              <!-- Product Title END -->
-            </article>
-          </div>
+</script>
         </div>
       </section>
+
+
+
+
+
+
     </div>
   </main>
 

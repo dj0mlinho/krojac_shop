@@ -18,10 +18,11 @@ function displayCategory() {
   event.preventDefault();
   let dataCol = $(this).data("col");
 
-  let colection = db.filter(function(element) {
+  let colection = db.filter(function (element) {
     return element.colection == dataCol || element[dataCol];
   });
   render(colection);
+  $(".product-img-holder > a").on("click", showProduct);
 }
 
 function render(colection) {
@@ -36,19 +37,20 @@ function render(colection) {
   $("#insertTemplate").html(text);
 }
 
+
 function showProduct() {
   let imgValue = $(this)
     .children()
     .attr("src");
   this.href = "http://localhost/_projects/shop/detailed.html";
   localStorage.setItem("save", imgValue);
+
 }
 
 //BOJANOVO
 
-$(".back-to-top").click(function() {
-  $("html, body").animate(
-    {
+$(".back-to-top").click(function () {
+  $("html, body").animate({
       scrollTop: 0
     },
     1000
